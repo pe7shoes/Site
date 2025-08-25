@@ -6,22 +6,22 @@
   <title>Pé7 Shoes</title>
   <style>
     html, body {
-      margin: 0; padding: 0;
-      height: 100%; width: 100%;
-      background: #2b1b0f; /* cor de fundo próxima ao marrom da arte */
+      margin: 0; 
+      padding: 0;
+      height: 100%;
+      width: 100%;
     }
     .bg {
       position: fixed;
-      inset: 0;              /* top/right/bottom/left: 0 */
-      width: 100vw;
-      height: 100vh;
-      object-fit: contain;   /* >>> mantém proporção sem cortar <<< */
-      object-position: center;
-      display: block; border: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;   /* força a imagem a se esticar exatamente ao tamanho da tela */
     }
   </style>
 </head>
 <body>
-  <img class="bg" src="/logo.png?v=3" alt="Pé7 Shoes">
+  <img class="bg" src="/logo.png?v=4" alt="Pé7 Shoes">
 </body>
 </html>
