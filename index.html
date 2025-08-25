@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pé7 Shoes</title>
   <style>
     html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
+      margin: 0; padding: 0;
+      height: 100%; width: 100%;
+      background: #2b1b0f; /* cor de fundo próxima ao marrom da arte */
     }
-    body {
-      background: #222 url('/logo.png') no-repeat center center fixed;
-      background-size: cover; /* imagem ocupa toda a tela */
+    .bg {
+      position: fixed;
+      inset: 0;              /* top/right/bottom/left: 0 */
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;   /* >>> mantém proporção sem cortar <<< */
+      object-position: center;
+      display: block; border: 0;
     }
   </style>
 </head>
 <body>
+  <img class="bg" src="/logo.png?v=3" alt="Pé7 Shoes">
 </body>
 </html>
